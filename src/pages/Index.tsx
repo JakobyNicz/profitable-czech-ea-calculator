@@ -41,7 +41,7 @@ const Index = () => {
 
         {/* Footer */}
         <footer className="text-center text-sm text-muted-foreground mt-12 animate-fade-in">
-          <p>© {new Date().getFullYear()} Vantage Markets Calculator</p>
+          <p>© {new Date().getFullYear()} Profitable Czech EA - Calculator</p>
         </footer>
       </div>
     </div>;
