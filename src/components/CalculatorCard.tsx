@@ -64,7 +64,7 @@ export const CalculatorCard = ({
           <label className="text-sm font-medium text-muted-foreground">
             Tvůj vklad (USD)
           </label>
-          <Input type="number" value={deposit} onChange={e => setDeposit(e.target.value)} placeholder="Zadejte částku..." className="h-14 text-lg font-semibold bg-secondary/50 border-border/50 focus:border-primary focus:ring-primary/20 transition-all" min="0" />
+          <Input type="number" value={deposit} onChange={e => setDeposit(e.target.value)} className="h-14 text-lg font-semibold bg-secondary/50 border-border/50 focus:border-primary focus:ring-primary/20 transition-all" min="0" placeholder="Zadej \u010D\xE1stku..." />
         </div>
 
         {/* Results */}
@@ -77,7 +77,7 @@ export const CalculatorCard = ({
           </div>
           
           <div className="flex justify-between items-center p-4 rounded-lg bg-primary/10 border border-primary/30 glow">
-            <span className="font-medium">Celkem na účtu:</span>
+            <span className="font-medium">Celkem na účtě:  </span>
             <span className="font-display text-xl font-bold text-primary glow-text">
               ${formatNumber(total)}
             </span>
