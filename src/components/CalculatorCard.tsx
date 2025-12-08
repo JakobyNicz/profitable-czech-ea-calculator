@@ -77,7 +77,7 @@ export const CalculatorCard = ({
           </div>
           
           <div className="flex justify-between items-center p-4 rounded-lg bg-primary/10 border border-primary/30 glow">
-            <span className="font-medium">Celkem na účtě:  </span>
+            <span className="font-medium">Celkem na účtě budeš mít:</span>
             <span className="font-display text-xl font-bold text-primary glow-text">
               ${formatNumber(total)}
             </span>
