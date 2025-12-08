@@ -55,9 +55,31 @@ const Index = () => {
 
         {/* Footer */}
         <footer className="text-center text-sm text-muted-foreground mt-12 animate-fade-in">
+          <div className="flex items-center justify-center gap-4 mb-2">
+            <a 
+              href="https://t.me/fonziinator" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 text-primary hover:text-primary/80 transition-all duration-300 hover:scale-110"
+            >
+              <Send className="w-4 h-4" />
+              <span>Telegram</span>
+            </a>
+          </div>
           <p>© {new Date().getFullYear()} Profitable Czech EA - Calculator</p>
         </footer>
       </div>
+
+      {/* Floating Telegram Button */}
+      <a
+        href="https://t.me/fonziinator"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="fixed bottom-6 right-6 z-50 bg-primary text-primary-foreground p-4 rounded-full shadow-lg hover:scale-110 transition-all duration-300 hover:shadow-[0_0_20px_hsl(var(--primary)/0.6)] animate-fade-in"
+        aria-label="Kontaktujte nás na Telegramu"
+      >
+        <Send className="w-6 h-6" />
+      </a>
     </div>;
 };
 export default Index;
