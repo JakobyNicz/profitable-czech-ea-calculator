@@ -50,7 +50,7 @@ export const EntryFeeTable = () => {
                   <td className="py-3 px-2 text-left font-medium">
                     ${formatCurrency(row.deposit)}
                   </td>
-                  <td className="py-3 px-2 text-center text-accent font-semibold">
+                  <td className="py-3 px-2 text-center text-primary font-semibold">
                     {row.percentage}%
                   </td>
                   <td className="py-3 px-2 text-right font-display font-bold text-primary">

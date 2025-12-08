@@ -32,7 +32,7 @@ export const RiskLevels = () => {
                   <div className="text-xs text-muted-foreground">{risk.description}</div>
                 </div>
               </div>
-              <div className="font-display text-xl font-bold text-success glow-text">
+              <div className="font-display text-xl font-bold text-primary glow-text">
                 {risk.returns}
               </div>
             </div>

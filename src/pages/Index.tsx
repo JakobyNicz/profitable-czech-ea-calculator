@@ -3,6 +3,7 @@ import { EntryFeeTable } from "@/components/EntryFeeTable";
 import { RiskLevels } from "@/components/RiskLevels";
 import { MonthlyFee } from "@/components/MonthlyFee";
 import { BackgroundGrid } from "@/components/BackgroundGrid";
+import logo from "@/assets/logo.jpeg";
 
 const Index = () => {
   return (
@@ -12,11 +13,13 @@ const Index = () => {
       <div className="relative z-10 container mx-auto px-4 py-8 md:py-16">
         {/* Header */}
         <header className="text-center mb-12 md:mb-16 animate-fade-in">
-          {/* Logo placeholder */}
+          {/* Logo */}
           <div className="mb-6">
-            <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-primary/20 border border-primary/30 glow">
-              <span className="font-display text-2xl font-bold text-primary">V</span>
-            </div>
+            <img 
+              src={logo} 
+              alt="Logo" 
+              className="w-20 h-20 md:w-24 md:h-24 mx-auto rounded-2xl glow object-cover"
+            />
           </div>
           
           <h1 className="font-display text-3xl md:text-5xl font-bold mb-4 glow-text text-primary">

@@ -2,76 +2,76 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Futuristic Dark Theme Design System */
+/* Clean 3-Color Dark Theme Design System */
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap');
 
 @layer base {
   :root {
-    --background: 220 20% 6%;
-    --foreground: 210 40% 98%;
+    /* 3 Color Palette: Dark, Light, Gold Accent */
+    --background: 0 0% 7%;
+    --foreground: 0 0% 95%;
 
-    --card: 220 25% 10%;
-    --card-foreground: 210 40% 98%;
+    --card: 0 0% 10%;
+    --card-foreground: 0 0% 95%;
 
-    --popover: 220 25% 10%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 0 0% 10%;
+    --popover-foreground: 0 0% 95%;
 
-    --primary: 160 84% 50%;
-    --primary-foreground: 220 20% 6%;
+    --primary: 45 100% 55%;
+    --primary-foreground: 0 0% 5%;
 
-    --secondary: 220 25% 15%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 0 0% 15%;
+    --secondary-foreground: 0 0% 95%;
 
-    --muted: 220 20% 18%;
-    --muted-foreground: 215 20% 55%;
+    --muted: 0 0% 18%;
+    --muted-foreground: 0 0% 60%;
 
-    --accent: 280 80% 60%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 45 100% 55%;
+    --accent-foreground: 0 0% 5%;
 
     --destructive: 0 84% 60%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 95%;
 
-    --border: 220 20% 18%;
-    --input: 220 20% 15%;
-    --ring: 160 84% 50%;
+    --border: 0 0% 20%;
+    --input: 0 0% 15%;
+    --ring: 45 100% 55%;
 
     --radius: 0.75rem;
 
-    /* Custom colors */
-    --glow: 160 84% 50%;
-    --glow-purple: 280 80% 60%;
-    --success: 160 84% 50%;
-    --warning: 45 93% 58%;
+    /* Custom tokens */
+    --glow: 45 100% 55%;
+    --success: 45 100% 55%;
+    --warning: 45 100% 55%;
   }
 
   .dark {
-    --background: 220 20% 6%;
-    --foreground: 210 40% 98%;
+    --background: 0 0% 7%;
+    --foreground: 0 0% 95%;
 
-    --card: 220 25% 10%;
-    --card-foreground: 210 40% 98%;
+    --card: 0 0% 10%;
+    --card-foreground: 0 0% 95%;
 
-    --popover: 220 25% 10%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 0 0% 10%;
+    --popover-foreground: 0 0% 95%;
 
-    --primary: 160 84% 50%;
-    --primary-foreground: 220 20% 6%;
+    --primary: 45 100% 55%;
+    --primary-foreground: 0 0% 5%;
 
-    --secondary: 220 25% 15%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 0 0% 15%;
+    --secondary-foreground: 0 0% 95%;
 
-    --muted: 220 20% 18%;
-    --muted-foreground: 215 20% 55%;
+    --muted: 0 0% 18%;
+    --muted-foreground: 0 0% 60%;
 
-    --accent: 280 80% 60%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 45 100% 55%;
+    --accent-foreground: 0 0% 5%;
 
     --destructive: 0 84% 60%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 95%;
 
-    --border: 220 20% 18%;
-    --input: 220 20% 15%;
-    --ring: 160 84% 50%;
+    --border: 0 0% 20%;
+    --input: 0 0% 15%;
+    --ring: 45 100% 55%;
   }
 }
 
@@ -103,10 +103,6 @@
     text-shadow: 0 0 20px hsl(var(--glow) / 0.5), 0 0 40px hsl(var(--glow) / 0.3);
   }
 
-  .glow-purple {
-    box-shadow: 0 0 20px hsl(var(--glow-purple) / 0.3), 0 0 40px hsl(var(--glow-purple) / 0.1);
-  }
-
   .gradient-border {
     position: relative;
     background: hsl(var(--card));
@@ -119,7 +115,7 @@
     inset: 0;
     padding: 1px;
     border-radius: inherit;
-    background: linear-gradient(135deg, hsl(var(--primary) / 0.5), hsl(var(--accent) / 0.5));
+    background: linear-gradient(135deg, hsl(var(--primary) / 0.6), hsl(var(--primary) / 0.1));
     -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
     mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
     -webkit-mask-composite: xor;
