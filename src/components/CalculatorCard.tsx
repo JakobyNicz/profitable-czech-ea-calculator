@@ -1,24 +1,28 @@
 import { useState, useMemo } from "react";
 import { Input } from "@/components/ui/input";
-
 interface CalculatorCardProps {
   title: string;
   subtitle: string;
   isFirstDeposit?: boolean;
 }
-
-export const CalculatorCard = ({ title, subtitle, isFirstDeposit = false }: CalculatorCardProps) => {
+export const CalculatorCard = ({
+  title,
+  subtitle,
+  isFirstDeposit = false
+}: CalculatorCardProps) => {
   const [deposit, setDeposit] = useState<string>("");
-
-  const { bonus, total } = useMemo(() => {
+  const {
+    bonus,
+    total
+  } = useMemo(() => {
     const depositNum = parseFloat(deposit) || 0;
-    
     if (depositNum <= 0) {
-      return { bonus: 0, total: 0 };
+      return {
+        bonus: 0,
+        total: 0
+      };
     }
-
     let calculatedBonus: number;
-
     if (isFirstDeposit) {
       // First deposit bonus calculation:
       // If deposit <= 1000: bonus = 150%
@@ -34,22 +38,18 @@ export const CalculatorCard = ({ title, subtitle, isFirstDeposit = false }: Calc
       // Additional deposit bonus: 25%
       calculatedBonus = depositNum * 0.25;
     }
-
     return {
       bonus: calculatedBonus,
-      total: depositNum + calculatedBonus,
+      total: depositNum + calculatedBonus
     };
   }, [deposit, isFirstDeposit]);
-
   const formatNumber = (num: number) => {
     return new Intl.NumberFormat('en-US', {
       minimumFractionDigits: 0,
-      maximumFractionDigits: 2,
+      maximumFractionDigits: 2
     }).format(num);
   };
-
-  return (
-    <div className="gradient-border p-6 animate-fade-in">
+  return <div className="gradient-border p-6 animate-fade-in">
       <div className="space-y-6">
         {/* Header */}
         <div className="text-center">
@@ -62,16 +62,9 @@ export const CalculatorCard = ({ title, subtitle, isFirstDeposit = false }: Calc
         {/* Input */}
         <div className="space-y-2">
           <label className="text-sm font-medium text-muted-foreground">
-            Váš vklad (USD)
+            Tvůj vklad (USD)
           </label>
-          <Input
-            type="number"
-            value={deposit}
-            onChange={(e) => setDeposit(e.target.value)}
-            placeholder="Zadejte částku..."
-            className="h-14 text-lg font-semibold bg-secondary/50 border-border/50 focus:border-primary focus:ring-primary/20 transition-all"
-            min="0"
-          />
+          <Input type="number" value={deposit} onChange={e => setDeposit(e.target.value)} placeholder="Zadejte částku..." className="h-14 text-lg font-semibold bg-secondary/50 border-border/50 focus:border-primary focus:ring-primary/20 transition-all" min="0" />
         </div>
 
         {/* Results */}
@@ -93,13 +86,8 @@ export const CalculatorCard = ({ title, subtitle, isFirstDeposit = false }: Calc
 
         {/* Bonus info */}
         <div className="text-center text-xs text-muted-foreground">
-          {isFirstDeposit ? (
-            <span>Bonus: 150% do $1,000, pak 25% (max $50,000)</span>
-          ) : (
-            <span>Bonus: 25% z vkladu</span>
-          )}
+          {isFirstDeposit ? <span>Bonus: 150% do $1,000, pak 25% (max $50,000)</span> : <span>Bonus: 25% z vkladu</span>}
         </div>
       </div>
-    </div>
-  );
+    </div>;
 };
