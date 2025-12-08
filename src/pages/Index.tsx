@@ -26,7 +26,7 @@ const Index = () => {
 
         {/* Calculators */}
         <section className="grid md:grid-cols-2 gap-6 mb-8">
-          <CalculatorCard title="PRVNÍ VKLAD" subtitle="Bonus až 150% + 25%" isFirstDeposit={true} />
+          <CalculatorCard title="PRVNÍ VKLAD" subtitle="Bonus 150% + 25%" isFirstDeposit={true} />
           <CalculatorCard title="DALŠÍ VKLADY" subtitle="Bonus 25%" isFirstDeposit={false} />
         </section>
 
