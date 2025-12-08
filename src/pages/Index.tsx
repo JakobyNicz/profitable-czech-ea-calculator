@@ -23,7 +23,7 @@ const Index = () => {
           </div>
           
           <h1 className="font-display text-3xl md:text-5xl font-bold mb-4 glow-text text-primary">
-            VANTAGE MARKETS
+            Profitable Czech EA
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
             Kalkulačka bonusů při vkladu na broker
