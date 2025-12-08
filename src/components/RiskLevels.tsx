@@ -1,8 +1,8 @@
 import { TrendingUp } from "lucide-react";
 
 const riskData = [
-  { level: "x1", returns: "8-10%", description: "Konzervativní strategie" },
-  { level: "x2", returns: "16-20%", description: "Agresivnější strategie" },
+  { level: "x1", returns: "8-10%", description: "Konzervativní risk" },
+  { level: "x2", returns: "16-20%", description: "Dynamický risk" },
 ];
 
 export const RiskLevels = () => {
