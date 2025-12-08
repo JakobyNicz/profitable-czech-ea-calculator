@@ -64,7 +64,7 @@ export const CalculatorCard = ({
           <label className="text-sm font-medium text-muted-foreground">
             Tvůj vklad (USD)
           </label>
-          <Input type="number" value={deposit} onChange={e => setDeposit(e.target.value)} className="h-14 text-lg font-semibold bg-secondary/50 border-border/50 focus:border-primary focus:ring-primary/20 transition-all" min="0" placeholder="Zadej \u010D\xE1stku..." />
+          <Input type="number" value={deposit} onChange={e => setDeposit(e.target.value)} className="h-14 text-lg font-semibold bg-secondary/50 border-border/50 focus:border-primary focus:ring-primary/20 transition-all" min="0" placeholder="Zadej částku..." />
         </div>
 
         {/* Results */}
