@@ -3,6 +3,7 @@ import { EntryFeeTable } from "@/components/EntryFeeTable";
 import { RiskLevels } from "@/components/RiskLevels";
 import { MonthlyFee } from "@/components/MonthlyFee";
 import { BackgroundGrid } from "@/components/BackgroundGrid";
+import { Send } from "lucide-react";
 import logo from "@/assets/logo.jpeg";
 const Index = () => {
   return <div className="min-h-screen bg-background relative">
@@ -12,11 +13,22 @@ const Index = () => {
         {/* Header */}
         <header className="text-center mb-12 md:mb-16 animate-fade-in">
           {/* Logo */}
-          <div className="mb-6">
+          <div className="mb-4">
             <a href="https://t.me/fonziinator" target="_blank" rel="noopener noreferrer">
               <img src={logo} alt="Logo" className="w-20 h-20 md:w-24 md:h-24 mx-auto rounded-2xl glow object-cover hover:scale-105 transition-transform cursor-pointer" />
             </a>
           </div>
+          
+          {/* Telegram Link */}
+          <a 
+            href="https://t.me/fonziinator" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 text-primary hover:text-primary/80 transition-all duration-300 hover:scale-110 mb-4 group"
+          >
+            <Send className="w-5 h-5 md:w-6 md:h-6 glow-text group-hover:drop-shadow-[0_0_8px_hsl(var(--primary))]" />
+            <span className="text-sm md:text-base font-medium glow-text">Telegram</span>
+          </a>
           
           <h1 className="font-display text-3xl md:text-5xl font-bold mb-4 glow-text text-primary">
             Profitable Czech EA
