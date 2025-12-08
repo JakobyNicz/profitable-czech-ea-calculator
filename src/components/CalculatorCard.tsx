@@ -70,7 +70,7 @@ export const CalculatorCard = ({
         {/* Results */}
         <div className="space-y-3">
           <div className="flex justify-between items-center p-3 rounded-lg bg-secondary/30">
-            <span className="text-muted-foreground">Bonus:</span>
+            <span className="text-muted-foreground">Bonus od brokera:</span>
             <span className="font-display font-bold text-primary">
               +${formatNumber(bonus)}
             </span>
