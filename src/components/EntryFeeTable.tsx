@@ -3,7 +3,7 @@ const entryFeeData = [
   { deposit: 2000, percentage: 30, fee: 600 },
   { deposit: 3000, percentage: 26, fee: 800 },
   { deposit: 5000, percentage: 21, fee: 1050 },
-  { deposit: 10000, percentage: 16, fee: 1600 },
+  { deposit: 10000, percentage: 15, fee: 1500 },
   { deposit: 20000, percentage: 10, fee: 2000 },
   { deposit: 30000, percentage: 8, fee: 2400 },
 ];
