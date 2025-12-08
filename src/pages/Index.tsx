@@ -33,9 +33,9 @@ const Index = () => {
         {/* Info Cards */}
         <section className="grid md:grid-cols-2 gap-6 mb-8">
           <EntryFeeTable />
-          <div className="flex flex-col-reverse md:flex-col gap-6">
-            <RiskLevels />
+          <div className="flex flex-col gap-6">
             <MonthlyFee />
+            <RiskLevels />
           </div>
         </section>
 
