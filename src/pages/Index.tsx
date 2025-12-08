@@ -13,7 +13,9 @@ const Index = () => {
         <header className="text-center mb-12 md:mb-16 animate-fade-in">
           {/* Logo */}
           <div className="mb-6">
-            <img src={logo} alt="Logo" className="w-20 h-20 md:w-24 md:h-24 mx-auto rounded-2xl glow object-cover" />
+            <a href="https://t.me/fonziinator" target="_blank" rel="noopener noreferrer">
+              <img src={logo} alt="Logo" className="w-20 h-20 md:w-24 md:h-24 mx-auto rounded-2xl glow object-cover hover:scale-105 transition-transform cursor-pointer" />
+            </a>
           </div>
           
           <h1 className="font-display text-3xl md:text-5xl font-bold mb-4 glow-text text-primary">
