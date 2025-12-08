@@ -9,7 +9,7 @@ export const MonthlyFee = () => {
             <Calendar className="w-6 h-6 text-primary" />
           </div>
           <div>
-            <h3 className="font-display text-lg font-bold">MONTHLY FEE</h3>
+            <h3 className="font-display text-lg font-bold text-primary glow-text">MONTHLY FEE</h3>
             <p className="text-sm text-muted-foreground">Měsíční poplatek za službu</p>
           </div>
         </div>
