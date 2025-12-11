@@ -14,15 +14,15 @@ const Index = () => {
         <header className="text-center mb-12 md:mb-16 animate-fade-in">
           {/* Logo */}
           <div className="mb-4">
-            <a href="https://t.me/fonziinator" target="_blank" rel="noopener noreferrer">
-              <img src={logo} alt="Logo" className="w-20 h-20 md:w-24 md:h-24 mx-auto rounded-2xl glow object-cover hover:scale-105 transition-transform cursor-pointer" />
-            </a>
-          </div>
+              <a href="https://t.me/ProfitableCzechEA" target="_blank" rel="noopener noreferrer">
+                <img src={logo} alt="Logo" className="w-20 h-20 md:w-24 md:h-24 mx-auto rounded-2xl glow object-cover hover:scale-105 transition-transform cursor-pointer" />
+              </a>
+            </div>
           
           {/* Telegram Link */}
           <a 
-            href="https://t.me/fonziinator" 
-            target="_blank" 
+            href="https://t.me/ProfitableCzechEA" 
+            target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 text-primary hover:text-primary/80 transition-all duration-300 hover:scale-110 mb-4 group"
           >
@@ -57,7 +57,7 @@ const Index = () => {
         <footer className="text-center text-sm text-muted-foreground mt-12 animate-fade-in">
           <div className="flex items-center justify-center gap-4 mb-2">
             <a 
-              href="https://t.me/fonziinator" 
+              href="https://t.me/ProfitableCzechEA"
               target="_blank" 
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 text-primary hover:text-primary/80 transition-all duration-300 hover:scale-110"
@@ -72,7 +72,7 @@ const Index = () => {
 
       {/* Floating Telegram Button */}
       <a
-        href="https://t.me/fonziinator"
+        href="https://t.me/ProfitableCzechEA"
         target="_blank"
         rel="noopener noreferrer"
         className="fixed bottom-6 right-6 z-50 bg-primary text-primary-foreground p-4 rounded-full shadow-lg hover:scale-110 transition-all duration-300 hover:shadow-[0_0_20px_hsl(var(--primary)/0.6)] animate-fade-in"
