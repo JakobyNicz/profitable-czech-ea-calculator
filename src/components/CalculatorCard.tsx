@@ -86,7 +86,7 @@ export const CalculatorCard = ({
 
         {/* Bonus info */}
         <div className="text-center text-xs text-muted-foreground">
-          {isFirstDeposit ? <span>Maximální možný kreditní bonus z akce 150% + 25% je do celkového vkladu 50.000 USD!</span> : <span>Bonus: 25% z vkladu</span>}
+          {isFirstDeposit ? <span>Maximální možný kreditní bonus z akce 150% + 25% je do celkového vkladu 50.000 USD!</span> : <span>Bonus: 25% z vkladu je do celkového vkladu 50.000 USD!</span>}
         </div>
       </div>
     </div>;
